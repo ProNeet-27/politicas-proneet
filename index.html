@@ -117,6 +117,35 @@
       font-size: 0.9rem;
       margin-top: 10px;
     }
+
+    /* ==== Scrollbar oscuro estilo ChatGPT ==== */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent; /* sin fondo visible */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #555;  /* gris oscuro normal */
+      border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #777;  /* más claro al pasar el mouse */
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background-color: #aaa;  /* aún más claro al hacer clic/arrastrar */
+    }
+
+    /* Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #555 transparent;
+    }
+    
   </style>
 </head>
 <body>
