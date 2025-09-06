@@ -119,6 +119,11 @@
     }
 
     /* ==== Scrollbar oscuro estilo ChatGPT ==== */
+
+    html, body {
+      overflow-y: scroll; /* fuerza que el navegador dibuje scrollbar aunque haya poco contenido */
+      padding-bottom: 200px; /* simula contenido extra para que la barra sea más corta */
+    }
     ::-webkit-scrollbar {
       width: 12px;
     }
@@ -130,7 +135,7 @@
     ::-webkit-scrollbar-thumb {
       background-color: #555;  /* gris oscuro normal */
       border-radius: 6px;
-      min-height: 40px;        /* la barrita no será más larga de esto */
+      min-height: 15px;        /* la barrita no será más larga de esto */
     }
 
     ::-webkit-scrollbar-thumb:hover {
